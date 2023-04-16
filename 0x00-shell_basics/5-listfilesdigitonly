@@ -1,3 +1,2 @@
 #!/bin/bash
-ls -la
-chmod u+x hello
+ls -lha
