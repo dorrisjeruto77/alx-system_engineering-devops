@@ -14,4 +14,3 @@ do
         echo "Best School"
     fi
     let COUNTER+=1
-done
