@@ -1,10 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# Displays a list of currently running processes.
+#   Shows all processes, for all users, including those
+#+  which might not have a TTY.
 
-# Display a user-oriented list of currently running processes with hierarchy
-
-# Get the process information using ps command
-process_info=$(ps aux --forest)
-
-# Display the information
-echo -e "User\tPID\tPPID\t%CPU\t%MEM\tVSZ\tRSS\tTTY\tSTAT\tSTART\tTIME\tCOMMAND"
-echo -e "$process_info"
+ps -auxf
