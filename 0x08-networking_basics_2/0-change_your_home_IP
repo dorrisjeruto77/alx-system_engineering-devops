@@ -2,5 +2,12 @@
 # Configures an Ubuntu server as follows:
 # - resolves to 127.0.0.2 localhost
 # - resolves to 8.8.8.8 facebook.com
+
+# Update localhost resolution in /etc/hosts
+sudo sed -i 's/127.0.0.1 localhost/127.0.0.2 localhost/' /etc/hosts
+
+# Update facebook.com resolution in /etc/hosts
+sudo sed -i 's/127.0.0.1 facebook.com/8.8.8.8 facebook.com/' /etc/hosts
+
 # Display all active IPv4 IPs
 ip -4 address show | grep -oP '(?<=inet\s)\d+(\.\d+){3}' | sort -u
