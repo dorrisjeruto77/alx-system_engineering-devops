@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# connects to school server
+ssh -i root@172.17.0.19
