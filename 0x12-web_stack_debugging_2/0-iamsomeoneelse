@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Script accepting an argument to run whoami command
+#user passed as an argument
+sudo -u "$1" whoami
